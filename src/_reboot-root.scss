@@ -1,8 +1,6 @@
 ////
 /// Reboot root-level properties
 ///
-///
-/// @group Reboot
 /// @author absolutholz
 ////
 
@@ -32,13 +30,12 @@ $root-typography-line-height: 1.42 !default;
 /// @type String|List
 $root-typography-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
+/// Use momentum scrolling
+/// @type Boolean
 $root-momentum-scrolling: true !default;
 
-$root-selection-background-color: false !default;
-$root-selection-typography-color: false !default;
-
 // Bootstrap 4 (beta) Reboot
-// BS1. Swear I've see this in other places, but from Bootstrap 4 Reboot. However, I let elements natively inherit the value, starting at the html level
+// BS1. Bootstrap 4 Reboot. I used to set the root box-sizing and let elements inherit the value, but this wasn't a very logical approach
 // BS2. Change the default font family in all browsers.
 // BS3. Correct the line height in all browsers.
 // BS4. Bootstrap 4 Reboot: Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
@@ -48,6 +45,7 @@ $root-selection-typography-color: false !default;
 
 // Normalize 7.0.0
 // N2. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+
 *,
 *::before,
 *::after {
@@ -58,22 +56,20 @@ $root-selection-typography-color: false !default;
 	//transition-timing-function: inherit;
 }
 
-// sass-lint:disable property-sort-order no-vendor-prefixes
+// sass-lint:disable-block property-sort-order no-vendor-prefixes
 :root { // Interesting: :root = html, but has higher specificity
 	// HTML5 Boilerplate sets a color (#222), font-size (1em) and line-height (1.4) here, but not a background-color
 	background: $root-background-color; // BS7
 	color: $root-typography-color;
 	// sass-lint:disable space-around-operator
 	font: $root-typography-weight #{$root-typography-size}/#{$root-typography-line-height} $root-typography-family; // BS2, BS3 - in scss customizable defaults, not sure why boostrap defines font-family and line-height (1.15) here and then overwrites them on the body (and not even in shorthand notation) - personal note, use em instead of rem for IE (if I remember correctly. Really doesn't matter since at this level 1em = 100% = 1rem)
-	box-sizing: border-box; // BS1
 	-webkit-text-size-adjust: 100%; // BS4, N2
 	-ms-text-size-adjust: 100%; // BS4, N2
 	-ms-overflow-style: scrollbar; // BS5
-	// sass-lint:disable no-color-literals
 	@if ($root-momentum-scrolling) {
 		-webkit-overflow-scrolling: touch;
 	}
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // BS6
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // sass-lint:disable-line no-color-literals // BS6
 }
 
 // Bootstrap 4 (beta) Reboot
@@ -106,14 +102,10 @@ $root-selection-typography-color: false !default;
 // https://stackoverflow.com/a/16982510/7133471
 
 // Customize the background color to match your design.
-@if ($root-selection-background-color) {
-	::-moz-selection {
-		background: $root-selection-background-color;
-		text-shadow: none;
-	}
+::-moz-selection {
+	text-shadow: none;
+}
 
-	::selection {
-		background: $root-selection-background-color;
-		text-shadow: none;
-	}
+::selection {
+	text-shadow: none;
 }
