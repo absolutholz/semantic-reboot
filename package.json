@@ -6,7 +6,7 @@
     "clean": "rimraf dist",
     "compile": "node-sass --output-style=expanded --source-map=true src/reboot.scss dist/reboot.css",
     "prefix": "postcss dist/reboot.css --use=autoprefixer --map=true --output=dist/reboot.css",
-    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output dist/reboot.min.css dist/reboot.css",
+    "minify": "cleancss --level=1 --output dist/reboot.min.css dist/reboot.css",
     "build": "npm run compile && npm run prefix",
     "distribute": "npm run clean && npm run build && npm run minify"
   },
