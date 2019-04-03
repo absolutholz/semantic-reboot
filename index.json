@@ -1,0 +1,160 @@
+{
+	"examples": [
+		{
+			"id": "a",
+			"headline": "a",
+			"description": "<blockquote>The <strong>HTML <code>&lt;a&gt;</code> element</strong> (or <em>anchor</em> element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a\">&lt;a&gt;: The Anchor element</a></cite></blockquote>",
+			"example": "<!-- anchor linking to external file -->\n<a href=\"#anchor-example\" title=\"Go to the Named Anchor\">Link to Named Anchor</a>\n<br>\n<!-- placeholder links/named anchors (without href) --><a name=\"anchor-example\">Named Anchor</a>"
+		},
+		{
+			"id": "abbr",
+			"headline": "abbr",
+			"description": "<blockquote>The <strong>HTML Abbreviation element</strong>(<strong><code>&lt;abbr&gt;</code></strong>) represents an abbreviation or acronym; the optional <code><a href=\"/en-US/docs/Web/HTML/Global_attributes#attr-title\">title</a></code> attribute can provide an expansion or description for the abbreviation. If present, <code>title</code> must contain this full description and nothing else. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr\">&lt;abbr&gt;: The Abbreviation element</a></cite></blockquote>",
+			"example": "Using <abbr title=\"HyperText Markup Language\">HTML</abbr> is fun and easy!"
+		},
+		{
+			"id": "b",
+			"headline": "b",
+			"description": "<blockquote>The <strong>HTML Bring Attention To element</strong> (<strong><code>&lt;b&gt;</code></strong>)&nbsp; is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the <strong>Boldface element</strong>, and most browsers still draw the text in boldface. However, you should not use <code>&lt;b&gt;</code> for styling text; instead, you should use the CSS <a href=\"/en-US/docs/Web/CSS/font-weight\" title=\"The font-weight CSS property specifies the weight (or boldness) of the font. The font weights available to you will depend on the font-family you are using. Some fonts are only available in normal and bold.\"><code>font-weight</code></a> property to create boldface text, or the <a href=\"/en-US/docs/Web/HTML/Element/strong\" title=\"The HTML Strong Importance Element (<strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.\"><code>&lt;strong&gt;</code></a> element to indicate that text is of special importance. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b\">&lt;b&gt;: The Bring Attention To element</a></cite></blockquote>",
+			"example": "This article describes several <b>text-level</b> elements."
+		},
+		{
+			"id": "bdi",
+			"headline": "bdi",
+			"description": "<blockquote>The HTML <strong>Bidirectional Isolate element</strong> (<strong><code>&lt;bdi&gt;</code></strong>)&nbsp; tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.</p><cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi\">&lt;bdi&gt;: The Bidirectional Isolate element</a></cite></blockquote>",
+			"example": "<bdi>اَلأَعْشَى</bdi> - 1st place\n<br>\n<bdi>Jerry Cruncher</bdi> - 2nd place"
+		},
+		{
+			"id": "bdo",
+			"headline": "bdo",
+			"description": "<blockquote>The <strong>HTML Bidirectional Text Override element</strong> (<strong><code>&lt;bdo&gt;</code></strong>) overrides the current directionality of text, so that the text within is rendered in a different direction.<cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo\">&lt;bdo&gt;: The Bidirectional Text Override element</a></cite></blockquote>",
+			"example": "<!-- Switch text direction -->\n<p>This text will go left to right.</p>\n<p><bdo dir=\"rtl\">This text will go right to left.</bdo></p>"
+		},
+		{
+			"id": "br",
+			"headline": "br",
+			"description": "<blockquote>The <strong>HTML <code>&lt;br&gt;</code> element</strong> produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br\">&lt;br&gt;: The Line Break element</a></cite></blockquote>",
+			"example": "Mozilla<br>\n331 E. Evelyn Avenue<br>\nMountain View, CA<br>\n94041<br>\nUSA<br>"
+		},
+		{
+			"id": "cite",
+			"headline": "cite",
+			"description": "<blockquote>The <strong>HTML Citation element</strong> (<strong><code>&lt;cite&gt;</code></strong>) is used to describe a reference to a cited creative work, and must include the title of that work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite\">&lt;cite&gt;: The Citation element</a></cite></blockquote>",
+			"example": "More information can be found in <cite>[ISO-0000]</cite>."
+		},
+		{
+			"id": "code",
+			"headline": "code",
+			"description": "<blockquote>The <strong>HTML <code>&lt;code&gt;</code> element</strong> displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/user_agent\" title=\"user agent's: A user agent is a computer program representing a person, for example, a browser in a Web context.\">user agent's</a> default monospace font. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code\">&lt;code&gt;: The Inline Code element</a></cite></blockquote>",
+			"example": "The function <code>selectAll()</code> highlights all the text in the input field so the user can, for example, copy or delete the text."
+		},
+		{
+			"id": "data",
+			"headline": "data",
+			"description": "<blockquote>The <strong>HTML <code>&lt;data&gt;</code> element</strong> links a given content with a machine-readable translation. If the content is time- or date-related, the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time\" title=\"The HTML <time> element represents a specific period in time.\"><code>&lt;time&gt;</code></a> element must be used. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data\">&lt;data&gt;: The Machine-Readable data element</a></cite></blockquote>",
+			"example": "<p>New Products</p>\n<ul>\n<li><data value=\"398\">Mini Ketchup</data></li>\n<li><data value=\"399\">Jumbo Ketchup</data></li>\n<li><data  value=\"400\">Mega Jumbo Ketchup</data></li>\n</ul>"
+		},
+		{
+			"id": "dfn",
+			"headline": "dfn",
+			"description": "<blockquote>The <strong>HTML Definition element</strong> (<strong><dfn>&lt;dfn&gt;</dfn></strong>) is used to indicate the term being defined within the context of a definition phrase or sentence.</span> The <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p\" title=\"The HTML <p> element represents a paragraph.\"><code>&lt;p&gt;</code></a> element, the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt\" title=\"The HTML <dt> element specifies a term in a description or definition list, and as such must be used inside a <dl> element.\"><code>&lt;dt&gt;</code></a>/<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd\" title=\"The HTML <dd> element provides the details about or the definition of the preceding term (<dt>) in a description list (<dl>).\"><code>&lt;dd&gt;</code></a> pairing, or the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section\" title=\"The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document.\"><code>&lt;section&gt;</code></a> element which is the nearest ancestor of the <code>&lt;dfn&gt;</code> is considered to be the definition of the term. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn\">&lt;dfn&gt;: The Definition element</a></cite></blockquote>",
+			"example": "<!-- Basic identification of a term -->\nThe <strong>HTML Definition element</strong> (<strong><dfn>&lt;dfn&gt;</dfn></strong>) is used to indicate the term being defined within the context of a definition phrase or sentence.\n<br><br>\n<!-- Using abbreviations and definitions together -->\nThe <dfn><abbr title=\"Hubble Space Telescope\">HST</abbr></dfn> is among the most productive scientific instruments ever constructed."
+		},
+		{
+			"id": "em",
+			"headline": "em",
+			"description": "<blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em\">&lt;em&gt;: The Emphasis element</a></cite></blockquote>",
+			"example": "In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content."
+		},
+		{
+			"id": "i",
+			"headline": "i",
+			"description": "<blockquote>The <strong>HTML <code>&lt;i&gt;</code> element</strong> represents a range of text that is set off from the normal text for some reason. Some examples include technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i\">&lt;i&gt;: The Set-off Text element</a></cite></blockquote>",
+			"example": "The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature."
+		},
+		{
+			"id": "kbd",
+			"headline": "kbd",
+			"description": "<blockquote>The <strong>HTML Keyboard Input element</strong> (<strong><code>&lt;kbd&gt;</code></strong>) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/user_agent\" title=\"user agent: A user agent is a computer program representing a person, for example, a browser in a Web context.\">user agent</a> defaults to rendering the contents of a <code>&lt;kbd&gt;</code> element using its default monospace font, although this is not mandated by the HTML standard. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd\">&lt;kbd&gt;: The Keyboard Input element</a></cite></blockquote>",
+			"example": "Use the command <kbd>help mycommand</kbd> to view documentation for the command \"mycommand\"."
+		},
+		{
+			"id": "mark",
+			"headline": "mark",
+			"description": "<blockquote>The <strong>HTML Mark Text element</strong> (<strong><code>&lt;mark&gt;</code></strong>) represents text which is <strong>marked</strong> or <strong>highlighted</strong> for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark\">&lt;mark&gt;: The Mark Text element</a></cite></blockquote>",
+			"example": "It is a dark time for the Rebellion. Although the Death Star has been destroyed, <mark>Imperial</mark> troops have driven the Rebel forces from their hidden base and pursued them across the galaxy."
+		},
+		{
+			"id": "q",
+			"headline": "q",
+			"description": "<blockquote>The <strong>HTML <code>&lt;q&gt;</code> element</strong> indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <a href=\"/en-US/docs/Web/HTML/Element/blockquote\" title=\"The HTML <blockquote> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <cite> element.\"><code>&lt;blockquote&gt;</code></a> element. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q\">&lt;q&gt;: The Inline Quotation element</a></cite></blockquote>",
+			"example": "According to Mozilla's website, <q cite=\"https://www.mozilla.org/en-US/about/history/details/\">Firefox 1.0 was released in 2004 and became a big success.</q>"
+		},
+		{
+			"id": "s",
+			"headline": "s",
+			"description": "<blockquote>The <strong>HTML <code>&lt;s&gt;</code> element</strong> renders text with a strikethrough, or a line through it. Use the <code>&lt;s&gt;</code> element to represent things that are no longer relevant or no longer accurate. However, <code>&lt;s&gt;</code> is not appropriate when indicating document edits; for that, use the <a href=\"/en-US/docs/Web/HTML/Element/del\" title=\"The HTML <del> element represents a range of text that has been deleted from a document.\"><code>&lt;del&gt;</code></a> and <a href=\"/en-US/docs/Web/HTML/Element/ins\" title=\"The HTML <ins> element represents a range of text that has been added to a document.\"><code>&lt;ins&gt;</code></a> elements, as appropriate. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s\">&lt;s&gt;: The Strikethrough element</a></cite></blockquote>",
+			"example": "<s>Today's Special: Salmon</s> SOLD OUT"
+		},
+		{
+			"id": "samp",
+			"headline": "samp",
+			"description": "<blockquote>The <strong>HTML Sample Element</strong> (<strong><code>&lt;samp&gt;</code></strong>) is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console). <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp\">&lt;samp&gt;: The Sample Output element</a></cite></blockquote>",
+			"example": "When the process is complete, the utility will output the text <samp>Scan complete. Found <em>N</em> results.</samp> You can then proceed to the next step."
+		},
+		{
+			"id": "small",
+			"headline": "small",
+			"description": "<blockquote>The <strong>HTML <code>&lt;small&gt;</code></strong> <strong>element </strong>makes the text <em>font size</em> one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.&nbsp; In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small\">&lt;small&gt;: The Small element</a></cite></blockquote>",
+			"example": "This is the first sentence. <small>This whole sentence is in small letters.</small>"
+		},
+		{
+			"id": "span",
+			"headline": "span",
+			"description": "<blockquote>The <strong>HTML <code>&lt;span&gt;</code> element</strong> is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the <code>class</code> or <code>id</code> attributes), or because they share attribute values, such as <code>lang</code>. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <a href=\"/en-US/docs/Web/HTML/Element/div\" title=\"The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.\"><code>&lt;div&gt;</code></a> element, but <a href=\"/en-US/docs/Web/HTML/Element/div\" title=\"The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.\"><code>&lt;div&gt;</code></a> is a <a href=\"/en-US/docs/Web/HTML/Block-level_elements\">block-level element</a> whereas a <code>&lt;span&gt;</code> is an <a href=\"/en-US/docs/Web/HTML/Inline_elements\">inline element</a>. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span\">&lt;span&gt;: The Small element</a></cite></blockquote>",
+			"example": "<span>Some text</span>"
+		},
+		{
+			"id": "strong",
+			"headline": "strong",
+			"description": "<blockquote>The HTML <strong>Strong Importance Element</strong> (<strong><code>&lt;strong&gt;</code></strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong\">&lt;strong&gt;: The Small element</a></cite></blockquote>",
+			"example": "Before proceeding, <strong>make sure you put on your safety goggles</strong>."
+		},
+		{
+			"id": "sub",
+			"headline": "sub",
+			"description": "<blockquote>The HTML <strong>Subscript element</strong> (<strong><code>&lt;sub&gt;</code></strong>) specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub\">&lt;sub&gt;: The Subscript element</a></cite></blockquote>",
+			"example": "Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, which is commonly known as \"caffeine.\""
+		},
+		{
+			"id": "sup",
+			"headline": "sup",
+			"description": "<blockquote>The <strong>HTML Superscript element</strong> (<strong><code>&lt;sup&gt;</code></strong>) specifies inline text which is to be displayed as superscript for solely typographical reasons.</span> Superscripts are usually rendered with a raised baseline using smaller text. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup\">&lt;sup&gt;: The Superscript element</a></cite></blockquote>",
+			"example": "One of the most common equations in all of physics is <var>E</var>=<var>m</var><var>c</var><sup>2</sup>."
+		},
+		{
+			"id": "time",
+			"headline": "time",
+			"description": "<blockquote>The HTML <strong><code>&lt;time&gt;</code> element</strong> represents a specific period in time. It may include the <code>datetime</code> attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time\">&lt;time&gt;: The Time element</a></cite></blockquote>",
+			"example": "The concert starts at <time datetime=\"2018-07-07T20:00:00\">20:00</time>."
+		},
+		{
+			"id": "u",
+			"headline": "u",
+			"description": "<blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u\">&lt;u&gt;: The Unarticulated Annotation element</a></cite></blockquote>",
+			"example": "This paragraph includes a <u class=\"spelling\">wrnogly</u> spelled word."
+		},
+		{
+			"id": "var",
+			"headline": "var",
+			"description": "<blockquote>The HTML <strong>Variable element</strong> (<strong><code>&lt;var&gt;</code></strong>) represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var\">&lt;var&gt;: The Variable element</a></cite></blockquote>",
+			"example": "A simple equation: <var>x</var> = <var>y</var> + 2"
+		},
+		{
+			"id": "wbr",
+			"headline": "wbr",
+			"description": "<blockquote>The <strong>HTML <code>&lt;wbr&gt;</code> element</strong> represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr\">&lt;wbr&gt;: The Word Break Opportunity element</a></cite></blockquote>",
+			"example": "http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages"
+		}
+	]
+}

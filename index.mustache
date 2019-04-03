@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Elements</title>
+  <meta name="description" content="A collection of semantic HTML elements with examples and minimal documentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="dist/reboot.css">
+  <style>
+	:root {
+		--doc-theme: darkslategrey;
+	}
+	.doc-section {
+		margin-bottom: 5rem;
+	}
+
+	.doc-section > h3 {
+		background: var(--doc-theme);
+		color: white;
+		padding: 3rem 0 1rem;
+	}
+
+	.doc-description {
+		max-width: 90ch;
+	}
+
+	.doc-description > blockquote > cite {
+		display: block;
+    	padding: 0.125rem 1rem;
+	}
+
+	.doc-description > blockquote > cite::before {
+		content: "-- ";
+	}
+
+	.doc-example-section {
+
+	}
+
+	.doc-example {
+		border: 1px solid var(--doc-theme);
+		border-left-width: 5px;
+		padding: 1rem;
+	}
+
+	.doc-code {
+		background: #eee;
+		border: 0 solid var(--doc-theme);
+		border-left-width: 5px;
+		font-size: 0.875rem;
+		padding: 1rem;
+		white-space: normal;
+	}
+
+	.doc-table-of-contents {
+		-webkit-column-fill: balance;
+		column-fill: balance;
+		-webkit-column-gap: 2ch;
+		column-gap: 2ch;
+		-webkit-columns: 15ch;
+		columns: 15ch;
+		list-style: none;
+		padding: 0;
+	}
+
+	.doc-table-of-contents > * {
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	.doc-to-top {
+		bottom: 10px;
+		display: block;
+		font-size: 2rem;
+		line-height: 1;
+		position: fixed;
+		right: 10px;
+		text-decoration: none;
+	}
+
+	.l-contain {
+		margin: auto;
+		max-width: 1000px;
+		padding: 0 1rem;
+	}
+  </style>
+
+  <!-- <meta name="theme-color" content="#fafafa"> -->
+</head>
+
+<body>
+	<div class="l-contain">
+		<h1>HTML(5) Elements</h1>
+
+		<p>This page has brief descriptions and examples of <abbr title="HyperText Markup Language">HTML</abbr> elements. It is itended to be used as a basis for testing base <abbr title="Cascading Style Sheets">CSS</abbr> styles.</p>
+	</div>
+
+	<main>
+		<nav class="l-contain">
+			<h2 id="table-of-contents">Table of Contents</h2>
+
+			<ul class="doc-table-of-contents">
+			{{#examples}}
+				<li><a href="#{{ id }}">{{{ headline }}}</a></li>
+			{{/examples}}
+			</ul>
+
+			<h2>The Elements</h2>
+		</nav>
+
+		{{#examples}}
+			<section class="doc-section">
+				<h3 id="{{ id }}"><div class="l-contain">{{{ headline }}}</div></h3>
+				<div class="l-contain">
+				<div class="doc-description">{{{ description }}}</div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example">{{{ example }}}</div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>{{ example }}</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+		{{/examples}}
+	</main>
+
+	<footer class="l-contain">
+		<h2>Sources</h2>
+
+		<ul>
+			<li><a href="https://developer.mozilla.org/">MDN web docs</a></li>
+			<li><a href="https://htmlreference.io/">htmlreference.io</a></li>
+		</ul>
+
+		<a class="doc-to-top" href="#table-of-contents" title="Go back to the table of contents" aria-label="Go back to the table of contents">&#x1F51D;</a>
+	</footer>
+
+</body>
+
+</html>

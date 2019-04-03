@@ -8,7 +8,8 @@
     "prefix": "postcss dist/reboot.css --use=autoprefixer --map=true --output=dist/reboot.css",
     "minify": "cleancss --level=1 --output dist/reboot.min.css dist/reboot.css",
     "build": "npm run compile && npm run prefix",
-    "distribute": "npm run clean && npm run build && npm run minify"
+    "distribute": "npm run clean && npm run build && npm run minify",
+    "document": "mustache index.json index.mustache > index.html"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "autoprefixer": "^9.5.0",
     "clean-css-cli": "^4.2.1",
+    "mustache": "^3.0.1",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.2"
   }
