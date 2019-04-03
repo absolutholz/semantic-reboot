@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="dist/reboot.css">
   <style>
 	:root {
-		--doc-theme: darkslategrey;
+		--doc-theme: #2f4f4f; /* darkslategrey */
 	}
 	.doc-section {
 		margin-bottom: 5rem;
@@ -112,18 +112,25 @@
 				<li><a href="#b">b</a></li>
 				<li><a href="#bdi">bdi</a></li>
 				<li><a href="#bdo">bdo</a></li>
+				<li><a href="#blockquote">blockquote</a></li>
 				<li><a href="#br">br</a></li>
 				<li><a href="#cite">cite</a></li>
 				<li><a href="#code">code</a></li>
 				<li><a href="#data">data</a></li>
 				<li><a href="#dfn">dfn</a></li>
+				<li><a href="#div">div</a></li>
 				<li><a href="#em">em</a></li>
+				<li><a href="#hr">hr</a></li>
 				<li><a href="#i">i</a></li>
 				<li><a href="#kbd">kbd</a></li>
+				<li><a href="#main">main</a></li>
 				<li><a href="#mark">mark</a></li>
+				<li><a href="#p">p</a></li>
+				<li><a href="#pre">pre</a></li>
 				<li><a href="#q">q</a></li>
 				<li><a href="#s">s</a></li>
 				<li><a href="#samp">samp</a></li>
+				<li><a href="#section">section</a></li>
 				<li><a href="#small">small</a></li>
 				<li><a href="#span">span</a></li>
 				<li><a href="#strong">strong</a></li>
@@ -233,6 +240,23 @@
 						<pre class="doc-code"><code>&lt;!-- Switch text direction --&gt;
 &lt;p&gt;This text will go left to right.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;bdo dir&#x3D;&quot;rtl&quot;&gt;This text will go right to left.&lt;&#x2F;bdo&gt;&lt;&#x2F;p&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="blockquote"><div class="l-contain">blockquote</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the <strong>cite</strong> attribute, while a text representation of the source can be given using the <a href="/en-US/docs/Web/HTML/Element/cite" title="The HTML Citation element (<cite>) is used to describe a reference to a cited creative work, and must include the title of that work."><code>&lt;cite&gt;</code></a> element. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">&lt;blockquote&gt;: The Block Quotation element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><blockquote cite="https://tools.ietf.org/html/rfc1149"><p>Avian carriers can provide high delay, low throughput, and low altitude service. The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without  significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D  ether used by IEEE802.3. The carriers have an intrinsic collision avoidance system, which increases availability.</p></blockquote></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;blockquote cite&#x3D;&quot;https:&#x2F;&#x2F;tools.ietf.org&#x2F;html&#x2F;rfc1149&quot;&gt;&lt;p&gt;Avian carriers can provide high delay, low throughput, and low altitude service. The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without  significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D  ether used by IEEE802.3. The carriers have an intrinsic collision avoidance system, which increases availability.&lt;&#x2F;p&gt;&lt;&#x2F;blockquote&gt;</code></pre>
 					</div>
 				</section>
 				</div>
@@ -349,6 +373,23 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 				</div>
 			</section>
 			<section class="doc-section">
+				<h3 id="div"><div class="l-contain">div</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML Content Division element</strong> (<strong><code>&lt;div&gt;</code></strong>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">&lt;div&gt;: The Content Division element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><div><p>Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!</p></div></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;div&gt;&lt;p&gt;Any kind of content here. Such as &amp;lt;p&amp;gt;, &amp;lt;table&amp;gt;. You name it!&lt;&#x2F;p&gt;&lt;&#x2F;div&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
 				<h3 id="em"><div class="l-contain">em</div></h3>
 				<div class="l-contain">
 				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">&lt;em&gt;: The Emphasis element</a></cite></blockquote></div>
@@ -361,6 +402,27 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>In HTML 5, what was previously called &lt;em&gt;block-level&lt;&#x2F;em&gt; content is now called &lt;em&gt;flow&lt;&#x2F;em&gt; content.</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="hr"><div class="l-contain">hr</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;hr&gt;</code> element</strong> represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">&lt;hr&gt;: The Thematic Break (Horizontal Rule) element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<hr>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;hr&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></pre>
 					</div>
 				</section>
 				</div>
@@ -400,6 +462,23 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 				</div>
 			</section>
 			<section class="doc-section">
+				<h3 id="main"><div class="l-contain">main</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;main&gt;</code> element</strong> represents the dominant content of the <a href="/en-US/docs/Web/HTML/Element/body" title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."><code>&lt;body&gt;</code></a> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;: The Main sectioning element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><main>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</main></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;main&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;main&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
 				<h3 id="mark"><div class="l-contain">mark</div></h3>
 				<div class="l-contain">
 				<div class="doc-description"><blockquote>The <strong>HTML Mark Text element</strong> (<strong><code>&lt;mark&gt;</code></strong>) represents text which is <strong>marked</strong> or <strong>highlighted</strong> for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">&lt;mark&gt;: The Mark Text element</a></cite></blockquote></div>
@@ -412,6 +491,50 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>It is a dark time for the Rebellion. Although the Death Star has been destroyed, &lt;mark&gt;Imperial&lt;&#x2F;mark&gt; troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="p"><div class="l-contain">p</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;p&gt;</code> element</strong> represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">&lt;p&gt;: The Paragraph element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><p>This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of  text.</p>
+<p>This is the second paragraph. This is the second paragraph. This is the second paragraph. This is the second paragraph.</p></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;p&gt;This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of  text.&lt;&#x2F;p&gt;
+&lt;p&gt;This is the second paragraph. This is the second paragraph. This is the second paragraph. This is the second paragraph.&lt;&#x2F;p&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="pre"><div class="l-contain">pre</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;pre&gt;</code> element</strong> represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional ("monospace") font. Whitespace inside this element is displayed as written. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">&lt;pre&gt;: The Paragraph element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><pre>
+body {
+	color:red;
+}
+</pre></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;pre&gt;
+body {
+	color:red;
+}
+&lt;&#x2F;pre&gt;</code></pre>
 					</div>
 				</section>
 				</div>
@@ -463,6 +586,23 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>When the process is complete, the utility will output the text &lt;samp&gt;Scan complete. Found &lt;em&gt;N&lt;&#x2F;em&gt; results.&lt;&#x2F;samp&gt; You can then proceed to the next step.</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="section"><div class="l-contain">section</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;section&gt;</code> element</strong> represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document. Typically, but not always, sections have a heading. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">&lt;section&gt;: The Generic Section element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;section&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;section&gt;</code></pre>
 					</div>
 				</section>
 				</div>
@@ -572,7 +712,7 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 			<section class="doc-section">
 				<h3 id="u"><div class="l-contain">u</div></h3>
 				<div class="l-contain">
-				<div class="doc-description"><blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u">&lt;u&gt;: The Unarticulated Annotation element</a></cite></blockquote></div>
+				<div class="doc-description"><blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u">&lt;u&gt;: The Unarticulated Annotation (Underline) element</a></cite></blockquote></div>
 				<h4>Example</h4>
 				<section class="doc-example-section">
 					<div>

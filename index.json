@@ -31,6 +31,12 @@
 			"example": "<!-- Switch text direction -->\n<p>This text will go left to right.</p>\n<p><bdo dir=\"rtl\">This text will go right to left.</bdo></p>"
 		},
 		{
+			"id": "blockquote",
+			"headline": "blockquote",
+			"description": "<blockquote>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the <strong>cite</strong> attribute, while a text representation of the source can be given using the <a href=\"/en-US/docs/Web/HTML/Element/cite\" title=\"The HTML Citation element (<cite>) is used to describe a reference to a cited creative work, and must include the title of that work.\"><code>&lt;cite&gt;</code></a> element. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote\">&lt;blockquote&gt;: The Block Quotation element</a></cite></blockquote>",
+			"example": "<blockquote cite=\"https://tools.ietf.org/html/rfc1149\"><p>Avian carriers can provide high delay, low throughput, and low altitude service. The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without  significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D  ether used by IEEE802.3. The carriers have an intrinsic collision avoidance system, which increases availability.</p></blockquote>"
+		},
+		{
 			"id": "br",
 			"headline": "br",
 			"description": "<blockquote>The <strong>HTML <code>&lt;br&gt;</code> element</strong> produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br\">&lt;br&gt;: The Line Break element</a></cite></blockquote>",
@@ -61,10 +67,22 @@
 			"example": "<!-- Basic identification of a term -->\nThe <strong>HTML Definition element</strong> (<strong><dfn>&lt;dfn&gt;</dfn></strong>) is used to indicate the term being defined within the context of a definition phrase or sentence.\n<br><br>\n<!-- Using abbreviations and definitions together -->\nThe <dfn><abbr title=\"Hubble Space Telescope\">HST</abbr></dfn> is among the most productive scientific instruments ever constructed."
 		},
 		{
+			"id": "div",
+			"headline": "div",
+			"description": "<blockquote>The <strong>HTML Content Division element</strong> (<strong><code>&lt;div&gt;</code></strong>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div\">&lt;div&gt;: The Content Division element</a></cite></blockquote>",
+			"example": "<div><p>Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!</p></div>"
+		},
+		{
 			"id": "em",
 			"headline": "em",
 			"description": "<blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em\">&lt;em&gt;: The Emphasis element</a></cite></blockquote>",
 			"example": "In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content."
+		},
+		{
+			"id": "hr",
+			"headline": "hr",
+			"description": "<blockquote>The <strong>HTML <code>&lt;hr&gt;</code> element</strong> represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr\">&lt;hr&gt;: The Thematic Break (Horizontal Rule) element</a></cite></blockquote>",
+			"example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n<hr>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 		},
 		{
 			"id": "i",
@@ -79,10 +97,28 @@
 			"example": "Use the command <kbd>help mycommand</kbd> to view documentation for the command \"mycommand\"."
 		},
 		{
+			"id": "main",
+			"headline": "main",
+			"description": "<blockquote>The <strong>HTML <code>&lt;main&gt;</code> element</strong> represents the dominant content of the <a href=\"/en-US/docs/Web/HTML/Element/body\" title=\"The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document.\"><code>&lt;body&gt;</code></a> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main\">&lt;main&gt;: The Main sectioning element</a></cite></blockquote>",
+			"example": "<main>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</main>"
+		},
+		{
 			"id": "mark",
 			"headline": "mark",
 			"description": "<blockquote>The <strong>HTML Mark Text element</strong> (<strong><code>&lt;mark&gt;</code></strong>) represents text which is <strong>marked</strong> or <strong>highlighted</strong> for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark\">&lt;mark&gt;: The Mark Text element</a></cite></blockquote>",
 			"example": "It is a dark time for the Rebellion. Although the Death Star has been destroyed, <mark>Imperial</mark> troops have driven the Rebel forces from their hidden base and pursued them across the galaxy."
+		},
+		{
+			"id": "p",
+			"headline": "p",
+			"description": "<blockquote>The <strong>HTML <code>&lt;p&gt;</code> element</strong> represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p\">&lt;p&gt;: The Paragraph element</a></cite></blockquote>",
+			"example": "<p>This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of  text.</p>\n<p>This is the second paragraph. This is the second paragraph. This is the second paragraph. This is the second paragraph.</p>"
+		},
+		{
+			"id": "pre",
+			"headline": "pre",
+			"description": "<blockquote>The <strong>HTML <code>&lt;pre&gt;</code> element</strong> represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional (\"monospace\") font. Whitespace inside this element is displayed as written. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre\">&lt;pre&gt;: The Paragraph element</a></cite></blockquote>",
+			"example": "<pre>\nbody {\n\tcolor:red;\n}\n</pre>"
 		},
 		{
 			"id": "q",
@@ -98,9 +134,16 @@
 		},
 		{
 			"id": "samp",
+
 			"headline": "samp",
 			"description": "<blockquote>The <strong>HTML Sample Element</strong> (<strong><code>&lt;samp&gt;</code></strong>) is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console). <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp\">&lt;samp&gt;: The Sample Output element</a></cite></blockquote>",
 			"example": "When the process is complete, the utility will output the text <samp>Scan complete. Found <em>N</em> results.</samp> You can then proceed to the next step."
+		},
+		{
+			"id": "section",
+			"headline": "section",
+			"description": "<blockquote>The <strong>HTML <code>&lt;section&gt;</code> element</strong> represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document. Typically, but not always, sections have a heading. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section\">&lt;section&gt;: The Generic Section element</a></cite></blockquote>",
+			"example": "<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>"
 		},
 		{
 			"id": "small",
@@ -141,7 +184,7 @@
 		{
 			"id": "u",
 			"headline": "u",
-			"description": "<blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u\">&lt;u&gt;: The Unarticulated Annotation element</a></cite></blockquote>",
+			"description": "<blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u\">&lt;u&gt;: The Unarticulated Annotation (Underline) element</a></cite></blockquote>",
 			"example": "This paragraph includes a <u class=\"spelling\">wrnogly</u> spelled word."
 		},
 		{
