@@ -11,17 +11,14 @@
   <!-- <link rel="apple-touch-icon" href="icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="dist/reboot.css">
+  <link rel="stylesheet" href="../dist/reboot.css">
   <style>
-	:root {
-		--doc-theme: #2f4f4f; /* darkslategrey */
-	}
 	.doc-section {
 		margin-bottom: 5rem;
 	}
 
 	.doc-section > h3 {
-		background: var(--doc-theme);
+		background: #2f4f4f;
 		color: white;
 		padding: 3rem 0 1rem;
 	}
@@ -44,18 +41,19 @@
 	}
 
 	.doc-example {
-		border: 1px solid var(--doc-theme);
+		border: 1px solid #2f4f4f;
 		border-left-width: 5px;
 		padding: 1rem;
 	}
 
 	.doc-code {
 		background: #eee;
-		border: 0 solid var(--doc-theme);
+		border: 0 solid #2f4f4f;
 		border-left-width: 5px;
 		font-size: 0.875rem;
+		overflow: auto;
 		padding: 1rem;
-		white-space: normal;
+		white-space: pre-wrap;
 	}
 
 	.doc-table-of-contents {
@@ -107,15 +105,15 @@
 			<h2 id="table-of-contents">Table of Contents</h2>
 
 			<ul class="doc-table-of-contents">
-			{{#examples}}
+			{{#elements}}
 				<li><a href="#{{ id }}">{{{ headline }}}</a></li>
-			{{/examples}}
+			{{/elements}}
 			</ul>
 
 			<h2>The Elements</h2>
 		</nav>
 
-		{{#examples}}
+		{{#elements}}
 			<section class="doc-section">
 				<h3 id="{{ id }}"><div class="l-contain">{{{ headline }}}</div></h3>
 				<div class="l-contain">
@@ -133,7 +131,7 @@
 				</section>
 				</div>
 			</section>
-		{{/examples}}
+		{{/elements}}
 	</main>
 
 	<footer class="l-contain">

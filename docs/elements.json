@@ -1,5 +1,5 @@
 {
-	"examples": [
+	"elements": [
 		{
 			"id": "a",
 			"headline": "a",
@@ -11,6 +11,24 @@
 			"headline": "abbr",
 			"description": "<blockquote>The <strong>HTML Abbreviation element</strong>(<strong><code>&lt;abbr&gt;</code></strong>) represents an abbreviation or acronym; the optional <code><a href=\"/en-US/docs/Web/HTML/Global_attributes#attr-title\">title</a></code> attribute can provide an expansion or description for the abbreviation. If present, <code>title</code> must contain this full description and nothing else. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr\">&lt;abbr&gt;: The Abbreviation element</a></cite></blockquote>",
 			"example": "Using <abbr title=\"HyperText Markup Language\">HTML</abbr> is fun and easy!"
+		},
+		{
+			"id": "address",
+			"headline": "address",
+			"description": "<blockquote>The <strong>HTML <code>&lt;address&gt;</code> element</strong> indicates that the enclosed HTML provides contact information for a person or people, or for an organization. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address\">&lt;address&gt;: The Contact Address element</a></cite></blockquote>",
+			"example": "<address>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</address>"
+		},
+		{
+			"id": "article",
+			"headline": "article",
+			"description": "<blockquote>The <strong>HTML <code>&lt;article&gt;</code> element</strong> represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article\">&lt;article&gt;: The Contact Address element</a></cite></blockquote>",
+			"example": "<article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>"
+		},
+		{
+			"id": "aside",
+			"headline": "aside",
+			"description": "<blockquote>The <strong>HTML <code>&lt;aside&gt;</code> element</strong> represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside\">&lt;aside&gt;: The Aside element</a></cite></blockquote>",
+			"example": "<aside>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</aside>"
 		},
 		{
 			"id": "b",
@@ -58,7 +76,13 @@
 			"id": "data",
 			"headline": "data",
 			"description": "<blockquote>The <strong>HTML <code>&lt;data&gt;</code> element</strong> links a given content with a machine-readable translation. If the content is time- or date-related, the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time\" title=\"The HTML <time> element represents a specific period in time.\"><code>&lt;time&gt;</code></a> element must be used. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data\">&lt;data&gt;: The Machine-Readable data element</a></cite></blockquote>",
-			"example": "<p>New Products</p>\n<ul>\n<li><data value=\"398\">Mini Ketchup</data></li>\n<li><data value=\"399\">Jumbo Ketchup</data></li>\n<li><data  value=\"400\">Mega Jumbo Ketchup</data></li>\n</ul>"
+			"example": "<p>New Products</p>\n<ul>\n\t<li><data value=\"398\">Mini Ketchup</data></li>\n\t<li><data value=\"399\">Jumbo Ketchup</data></li>\n\t<li><data  value=\"400\">Mega Jumbo Ketchup</data></li>\n</ul>"
+		},
+		{
+			"id": "del",
+			"headline": "del",
+			"description": "<blockquote>The <strong>HTML <code>&lt;del&gt;</code> element</strong> represents a range of text that has been deleted from a document. This can be used when rendering \"track changes\" or source code diff information, for example. The <a href=\"/en-US/docs/Web/HTML/Element/ins\" title=\"The HTML <ins> element represents a range of text that has been added to a document.\"><code>&lt;ins&gt;</code></a> element can be used for the opposite purpose: to indicate text that has been added to the document. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del\">&lt;del&gt;: The Deleted Text data element</a></cite></blockquote>",
+			"example": "<p><del>This text has been deleted</del>, here is the rest of the paragraph.</p>"
 		},
 		{
 			"id": "dfn",
@@ -70,13 +94,37 @@
 			"id": "div",
 			"headline": "div",
 			"description": "<blockquote>The <strong>HTML Content Division element</strong> (<strong><code>&lt;div&gt;</code></strong>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div\">&lt;div&gt;: The Content Division element</a></cite></blockquote>",
-			"example": "<div><p>Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!</p></div>"
+			"example": "<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>"
+		},
+		{
+			"id": "dl",
+			"headline": "dl",
+			"description": "<blockquote>The <strong>HTML <code>&lt;dl&gt;</code>&nbsp;</strong>element represents a description list.<strong>&nbsp;</strong>The element encloses a list of groups of terms (specified using the <a href=\"/en-US/docs/Web/HTML/Element/dt\" title=\"The HTML <dt> element specifies a term in a description or definition list, and as such must be used inside a <dl> element.\"><code>&lt;dt&gt;</code></a> element) and descriptions (provided by <a href=\"/en-US/docs/Web/HTML/Element/dd\" title=\"The&nbsp;HTML <dd> element provides the details about or the definition of the preceding term (<dt>) in a description list (<dl>).\"><code>&lt;dd&gt;</code></a> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl\">&lt;dl&gt;: The Description List element</a></cite></blockquote>",
+			"example": "<dl>\n\t<dt>Names</dt>\n\t<dt>Nicknames</dt>\n\t<dd>The King of the Monsters</dd>\n\t<dd>Gigantis</dd>\n\t<dd>Godzilla</dd>\n\t<dt>Born</dt>\n\t<dd>1952</dd>\n\t<dt>Birthplace</dt>\n\t<dd>Japan</dd>\n\t<dt>Color</dt>\n\t<dd>Green</dd>\n</dl>"
 		},
 		{
 			"id": "em",
 			"headline": "em",
 			"description": "<blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em\">&lt;em&gt;: The Emphasis element</a></cite></blockquote>",
 			"example": "In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content."
+		},
+		{
+			"id": "footer",
+			"headline": "footer",
+			"description": "<blockquote>The<strong> HTML <code>&lt;footer&gt;</code> element</strong> represents a footer for its nearest <a href=\"/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#Defining_sections\">sectioning content</a> or <a href=\"/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#Sectioning_roots\" title=\"Sections and Outlines of an HTML5 document#Sectioning root\">sectioning root</a> element. A footer typically contains information about the author of the section, copyright data or links to related documents. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer\">&lt;footer&gt;: The Footer element</a></cite></blockquote>",
+			"example": "<footer>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</footer>"
+		},
+		{
+			"id": "header",
+			"headline": "header",
+			"description": "<blockquote>The <strong>HTML <code>&lt;header&gt;</code> element</strong> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header\">&lt;header&gt;: The Header element</a></cite></blockquote>",
+			"example": "<header>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</header>"
+		},
+		{
+			"id": "heading_elements",
+			"headline": "h1-h6",
+			"description": "<blockquote>The <strong>HTML <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> elements</strong> represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the lowest. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/heading_elements\">&lt;h1&gt;-&lt;h6&gt;: The HTML Section Heading element</a></cite></blockquote>",
+			"example": "<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>\n<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>\n<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>\n<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>\n<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>\n<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>"
 		},
 		{
 			"id": "hr",
@@ -89,6 +137,12 @@
 			"headline": "i",
 			"description": "<blockquote>The <strong>HTML <code>&lt;i&gt;</code> element</strong> represents a range of text that is set off from the normal text for some reason. Some examples include technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i\">&lt;i&gt;: The Set-off Text element</a></cite></blockquote>",
 			"example": "The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature."
+		},
+		{
+			"id": "ins",
+			"headline": "ins",
+			"description": "<blockquote>The <strong>HTML <code>&lt;ins&gt;</code> element</strong> represents a range of text that has been added to a document. You can use the <a href=\"/en-US/docs/Web/HTML/Element/del\" title=\"The HTML <del> element represents a range of text that has been deleted from a document.\"><code>&lt;del&gt;</code></a> element to similarly represent a range of text that has been deleted from the document. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins\">&lt;ins&gt;: The Inserted Text element</a></cite></blockquote>",
+			"example": "<ins>This text has been inserted</ins>"
 		},
 		{
 			"id": "kbd",
@@ -109,10 +163,22 @@
 			"example": "It is a dark time for the Rebellion. Although the Death Star has been destroyed, <mark>Imperial</mark> troops have driven the Rebel forces from their hidden base and pursued them across the galaxy."
 		},
 		{
+			"id": "nav",
+			"headline": "nav",
+			"description": "<blockquote>The <strong>HTML <code>&lt;nav&gt;</code> element</strong> represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav\">&lt;nav&gt;: The Navigation Section element</a></cite></blockquote>",
+			"example": "<nav>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</nav>"
+		},
+		{
+			"id": "ol",
+			"headline": "ol",
+			"description": "<blockquote>The <strong>HTML <code>&lt;ol&gt;</code> element</strong> represents an ordered list of items, typically rendered as a numbered list. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol\">&lt;ol&gt;: The Ordered List element</a></cite></blockquote>",
+			"example": "<ol>\n\t<li>first item</li>\n\t<li>second item\n\t\t<ol>\n\t\t\t<li>second item first subitem</li>\n\t\t\t<li>second item second subitem\n\t\t\t\t<ol>\n\t\t\t\t\t<li>second item second subitem first sub-subitem</li>\n\t\t\t\t\t<li>second item second subitem second sub-subitem</li>\n\t\t\t\t</ol>\n\t\t\t</li>\n\t\t\t<li>second item third subitem</li>\n\t\t</ol>\n\t</li>\n\t<li>third item</li>\n</ol>"
+		},
+		{
 			"id": "p",
 			"headline": "p",
 			"description": "<blockquote>The <strong>HTML <code>&lt;p&gt;</code> element</strong> represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p\">&lt;p&gt;: The Paragraph element</a></cite></blockquote>",
-			"example": "<p>This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of text. This is the first paragraph of  text.</p>\n<p>This is the second paragraph. This is the second paragraph. This is the second paragraph. This is the second paragraph.</p>"
+			"example": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
 		},
 		{
 			"id": "pre",
@@ -155,7 +221,7 @@
 			"id": "span",
 			"headline": "span",
 			"description": "<blockquote>The <strong>HTML <code>&lt;span&gt;</code> element</strong> is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the <code>class</code> or <code>id</code> attributes), or because they share attribute values, such as <code>lang</code>. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <a href=\"/en-US/docs/Web/HTML/Element/div\" title=\"The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.\"><code>&lt;div&gt;</code></a> element, but <a href=\"/en-US/docs/Web/HTML/Element/div\" title=\"The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.\"><code>&lt;div&gt;</code></a> is a <a href=\"/en-US/docs/Web/HTML/Block-level_elements\">block-level element</a> whereas a <code>&lt;span&gt;</code> is an <a href=\"/en-US/docs/Web/HTML/Inline_elements\">inline element</a>. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span\">&lt;span&gt;: The Small element</a></cite></blockquote>",
-			"example": "<span>Some text</span>"
+			"example": "<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>"
 		},
 		{
 			"id": "strong",
@@ -186,6 +252,12 @@
 			"headline": "u",
 			"description": "<blockquote>The HTML <strong>Unarticulated Annotation Element</strong> (<strong><code>&lt;u&gt;</code></strong>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u\">&lt;u&gt;: The Unarticulated Annotation (Underline) element</a></cite></blockquote>",
 			"example": "This paragraph includes a <u class=\"spelling\">wrnogly</u> spelled word."
+		},
+		{
+			"id": "ul",
+			"headline": "ul",
+			"description": "<blockquote>The<strong> HTML <code>&lt;ul&gt;</code> element</strong> represents an unordered list of items, typically rendered as a bulleted list. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul\">&lt;ul&gt;: The Unordered List element</a></cite></blockquote>",
+			"example": "<ul>\n\t<li>first item</li>\n\t<li>second item\n\t\t<ul>\n\t\t\t<li>second item first subitem</li>\n\t\t\t<li>second item second subitem\n\t\t\t\t<ul>\n\t\t\t\t\t<li>second item second subitem first sub-subitem</li>\n\t\t\t\t\t<li>second item second subitem second sub-subitem</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\t<li>second item third subitem</li>\n\t\t</ul>\n\t</li>\n\t<li>third item</li>\n</ul>"
 		},
 		{
 			"id": "var",
