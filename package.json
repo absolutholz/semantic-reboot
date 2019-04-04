@@ -9,7 +9,7 @@
     "minify": "cleancss --level=1 --output dist/reboot.min.css dist/reboot.css",
     "build": "npm run compile && npm run prefix",
     "distribute": "npm run clean && npm run build && npm run minify",
-    "document": "mustache docs/elements.json docs/index.mustache > docs/index.html"
+    "document": "mustache docs/elements.json docs/index.mustache > docs/index.html && npm run distribute && cp -a -v dist/. docs/"
   },
   "repository": {
     "type": "git",
