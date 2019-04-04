@@ -23,10 +23,6 @@
   width: device-width;
 }
 
-::selection {
-  text-shadow: none;
-}
-
 html {
   height: 100%;
   overflow-y: scroll;
