@@ -21,6 +21,7 @@
 		/* Sorry, but I just really like some of the color names */
 		background: darkslategrey;
 		color: white;
+		font: 100 3rem / 1 monospace;
 		padding: 3rem 0 1rem;
 	}
 
@@ -156,6 +157,7 @@
 				<li><a href="#u">u</a></li>
 				<li><a href="#ul">ul</a></li>
 				<li><a href="#var">var</a></li>
+				<li><a href="#video">video</a></li>
 				<li><a href="#wbr">wbr</a></li>
 			</ul>
 
@@ -264,7 +266,7 @@
 						<div class="doc-example"><audio controls>
 	<source src="http://techslides.com/demos/samples/sample.mp3" type="audio/mpeg">
 	<source src="http://techslides.com/demos/samples/sample.ogg" type="audio/ogg">
-	<p>Your browser doesn't support HTML5 audio. Here is a <a href="http://techslides.com/demos/samples/sample.wav">link to the audio</a> instead.</p>
+	<p>Your browser doesn't support HTML5 audio. Here is a <a href="http://techslides.com/demos/samples/sample.mp3">link to the audio</a> instead.</p>
 </audio></div>
 					</div>
 					<div>
@@ -272,7 +274,7 @@
 						<pre class="doc-code"><code>&lt;audio controls&gt;
 	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.mp3&quot; type&#x3D;&quot;audio&#x2F;mpeg&quot;&gt;
 	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.ogg&quot; type&#x3D;&quot;audio&#x2F;ogg&quot;&gt;
-	&lt;p&gt;Your browser doesn&#39;t support HTML5 audio. Here is a &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.wav&quot;&gt;link to the audio&lt;&#x2F;a&gt; instead.&lt;&#x2F;p&gt;
+	&lt;p&gt;Your browser doesn&#39;t support HTML5 audio. Here is a &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.mp3&quot;&gt;link to the audio&lt;&#x2F;a&gt; instead.&lt;&#x2F;p&gt;
 &lt;&#x2F;audio&gt;</code></pre>
 					</div>
 				</section>
@@ -1223,6 +1225,31 @@ body {
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>A simple equation: &lt;var&gt;x&lt;&#x2F;var&gt; &#x3D; &lt;var&gt;y&lt;&#x2F;var&gt; + 2</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="video"><div class="l-contain">video</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML Video element</strong> (<strong><code>&lt;video&gt;</code></strong>) embeds a media player which supports video playback into the document. You can use <code>&lt;video&gt;</code> for audio content as well, but the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" title="The HTML <audio> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element:&nbsp;the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream."><code>&lt;audio&gt;</code></a> element may provide a more appropriate user experience. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;: The Video Embed element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><video controls>
+	<source src="http://techslides.com/demos/samples/sample.mp4" type="video/mp4">
+	<source src="http://techslides.com/demos/samples/sample.webm" type="video/webm">
+	<p>Your browser doesn't support HTML5 video. Here is a <a href="http://techslides.com/demos/samples/sample.mp4">link to the video</a> instead.</p>
+</video></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;video controls&gt;
+	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.mp4&quot; type&#x3D;&quot;video&#x2F;mp4&quot;&gt;
+	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.webm&quot; type&#x3D;&quot;video&#x2F;webm&quot;&gt;
+	&lt;p&gt;Your browser doesn&#39;t support HTML5 video. Here is a &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.mp4&quot;&gt;link to the video&lt;&#x2F;a&gt; instead.&lt;&#x2F;p&gt;
+&lt;&#x2F;video&gt;</code></pre>
 					</div>
 				</section>
 				</div>

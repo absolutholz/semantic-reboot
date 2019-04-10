@@ -34,7 +34,7 @@
 			"id": "audio",
 			"headline": "audio",
 			"description": "<blockquote>The <strong>HTML <code>&lt;audio&gt;</code> element</strong> is used to embed sound content in documents. It may contain one or more audio sources, represented using the <code>src</code> attribute or the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source\" title=\"The HTML <source> element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element.\"><code>&lt;source&gt;</code></a> element:&nbsp;the browser will choose the most suitable one. It can also be the destination for streamed media, using a <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStream\" title=\"The MediaStream interface represents a stream of media content. A stream consists of several tracks such as&nbsp;video or audio tracks. Each track is specified as an instance of MediaStreamTrack.\"><code>MediaStream</code></a>. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio\">&lt;audio&gt;: The Embed Audio element</a></cite></blockquote>",
-			"example": "<audio controls>\n\t<source src=\"http://techslides.com/demos/samples/sample.mp3\" type=\"audio/mpeg\">\n\t<source src=\"http://techslides.com/demos/samples/sample.ogg\" type=\"audio/ogg\">\n\t<p>Your browser doesn't support HTML5 audio. Here is a <a href=\"http://techslides.com/demos/samples/sample.wav\">link to the audio</a> instead.</p>\n</audio>"
+			"example": "<audio controls>\n\t<source src=\"http://techslides.com/demos/samples/sample.mp3\" type=\"audio/mpeg\">\n\t<source src=\"http://techslides.com/demos/samples/sample.ogg\" type=\"audio/ogg\">\n\t<p>Your browser doesn't support HTML5 audio. Here is a <a href=\"http://techslides.com/demos/samples/sample.mp3\">link to the audio</a> instead.</p>\n</audio>"
 		},
 		{
 			"id": "b",
@@ -294,6 +294,12 @@
 			"headline": "var",
 			"description": "<blockquote>The HTML <strong>Variable element</strong> (<strong><code>&lt;var&gt;</code></strong>) represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var\">&lt;var&gt;: The Variable element</a></cite></blockquote>",
 			"example": "A simple equation: <var>x</var> = <var>y</var> + 2"
+		},
+		{
+			"id": "video",
+			"headline": "video",
+			"description": "<blockquote>The <strong>HTML Video element</strong> (<strong><code>&lt;video&gt;</code></strong>) embeds a media player which supports video playback into the document. You can use <code>&lt;video&gt;</code> for audio content as well, but the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio\" title=\"The HTML <audio> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element:&nbsp;the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.\"><code>&lt;audio&gt;</code></a> element may provide a more appropriate user experience. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video\">&lt;video&gt;: The Video Embed element</a></cite></blockquote>",
+			"example": "<video controls>\n\t<source src=\"http://techslides.com/demos/samples/sample.mp4\" type=\"video/mp4\">\n\t<source src=\"http://techslides.com/demos/samples/sample.webm\" type=\"video/webm\">\n\t<p>Your browser doesn't support HTML5 video. Here is a <a href=\"http://techslides.com/demos/samples/sample.mp4\">link to the video</a> instead.</p>\n</video>"
 		},
 		{
 			"id": "wbr",
