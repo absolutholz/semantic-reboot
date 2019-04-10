@@ -112,6 +112,7 @@
 				<li><a href="#address">address</a></li>
 				<li><a href="#article">article</a></li>
 				<li><a href="#aside">aside</a></li>
+				<li><a href="#audio">audio</a></li>
 				<li><a href="#b">b</a></li>
 				<li><a href="#bdi">bdi</a></li>
 				<li><a href="#bdo">bdo</a></li>
@@ -248,6 +249,31 @@
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>&lt;aside&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;aside&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="audio"><div class="l-contain">audio</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;audio&gt;</code> element</strong> is used to embed sound content in documents. It may contain one or more audio sources, represented using the <code>src</code> attribute or the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" title="The HTML <source> element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element."><code>&lt;source&gt;</code></a> element:&nbsp;the browser will choose the most suitable one. It can also be the destination for streamed media, using a <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream" title="The MediaStream interface represents a stream of media content. A stream consists of several tracks such as&nbsp;video or audio tracks. Each track is specified as an instance of MediaStreamTrack."><code>MediaStream</code></a>. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;: The Embed Audio element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><audio controls>
+	<source src="http://techslides.com/demos/samples/sample.mp3" type="audio/mpeg">
+	<source src="http://techslides.com/demos/samples/sample.ogg" type="audio/ogg">
+	<p>Your browser doesn't support HTML5 audio. Here is a <a href="http://techslides.com/demos/samples/sample.wav">link to the audio</a> instead.</p>
+</audio></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;audio controls&gt;
+	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.mp3&quot; type&#x3D;&quot;audio&#x2F;mpeg&quot;&gt;
+	&lt;source src&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.ogg&quot; type&#x3D;&quot;audio&#x2F;ogg&quot;&gt;
+	&lt;p&gt;Your browser doesn&#39;t support HTML5 audio. Here is a &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;techslides.com&#x2F;demos&#x2F;samples&#x2F;sample.wav&quot;&gt;link to the audio&lt;&#x2F;a&gt; instead.&lt;&#x2F;p&gt;
+&lt;&#x2F;audio&gt;</code></pre>
 					</div>
 				</section>
 				</div>
