@@ -67,6 +67,12 @@
 			"example": "Mozilla<br>\n331 E. Evelyn Avenue<br>\nMountain View, CA<br>\n94041<br>\nUSA<br>"
 		},
 		{
+			"id": "button",
+			"headline": "button",
+			"description": "<blockquote>The <strong>HTML <code>&lt;button&gt;</code> element</strong> represents a clickable button, which can be used in <a href=\"https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms\">forms</a> or anywhere in a document that needs simple, standard button functionality. By default, HTML buttons are typically presented in a style similar to that of the host platform the <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/user_agent\" title=\"user agent: A user agent is a computer program representing a person, for example, a browser in a Web context.\">user agent</a> is running on, but you can change the appearance of the button using <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS\">CSS</a>. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button\">&lt;button&gt;: The Button element</a></cite></blockquote>",
+			"example": "<!-- type: button --><button>Button</button>\n\n<!-- type: submit -->\n<button type=\"submit\">Submit</button>\n\n<!-- type: reset -->\n<button type=\"reset\">Reset</button>\n\n"
+		},
+		{
 			"id": "cite",
 			"headline": "cite",
 			"description": "<blockquote>The <strong>HTML Citation element</strong> (<strong><code>&lt;cite&gt;</code></strong>) is used to describe a reference to a cited creative work, and must include the title of that work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite\">&lt;cite&gt;: The Citation element</a></cite></blockquote>",
