@@ -139,6 +139,7 @@
 				<li><a href="#nav">nav</a></li>
 				<li><a href="#ol">ol</a></li>
 				<li><a href="#p">p</a></li>
+				<li><a href="#picture">picture</a></li>
 				<li><a href="#pre">pre</a></li>
 				<li><a href="#q">q</a></li>
 				<li><a href="#s">s</a></li>
@@ -840,6 +841,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 						<h5>Code</h5>
 						<pre class="doc-code"><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;p&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="picture"><div class="l-contain">picture</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;picture&gt;</code> element</strong> contains zero or more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" title="The HTML <source> element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element."><code>&lt;source&gt;</code></a> elements and one <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" title="The HTML <img> element embeds an image into the document. It is a replaced element."><code>&lt;img&gt;</code></a> element to provide versions of an image for different display/device scenarios. The browser will consider each child <code>&lt;source&gt;</code> element and choose the best match among them; if no matches are found, the URL of the <code>&lt;img&gt;</code> element's <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-src">src</a></code> attribute is selected. The selected image is then presented in the space occupied by the <code>&lt;img&gt;</code> element. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;: The Picture element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example">​<picture>
+	<source srcset="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE3LjksMTcuMzlDMTcuNjQsMTYuNTkgMTYuODksMTYgMTYsMTZIMTVWMTNBMSwxIDAgMCwwIDE0LDEySDhWMTBIMTBBMSwxIDAgMCwwIDExLDlWN0gxM0EyLDIgMCAwLDAgMTUsNVY0LjU5QzE3LjkzLDUuNzcgMjAsOC42NCAyMCwxMkMyMCwxNC4wOCAxOS4yLDE1Ljk3IDE3LjksMTcuMzlNMTEsMTkuOTNDNy4wNSwxOS40NCA0LDE2LjA4IDQsMTJDNCwxMS4zOCA0LjA4LDEwLjc4IDQuMjEsMTAuMjFMOSwxNVYxNkEyLDIgMCAwLDAgMTEsMThNMTIsMkExMCwxMCAwIDAsMCAyLDEyQTEwLDEwIDAgMCwwIDEyLDIyQTEwLDEwIDAgMCwwIDIyLDEyQTEwLDEwIDAgMCwwIDEyLDJaIiAvPjwvc3ZnPg==" type="image/svg+xml">
+	<img alt="A simple globe icon." height="64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAvVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Ke75sAAAAPnRSTlMAAgMFBgkMDQ8qKy5CREhJS09QUlNUVVZXaWpsbW9wd4CJiouMpKbCw9LT1NXW19jZ29zd4uPl7fLz9Pf4+fFU+NUAAADQSURBVHgBnc3ZUsJAEIXhM2RccBdkEcEFzLgTBxcZwPP+j0U16clUbvNdnr+qG43ZoStWq8INLGquvqgWXSStR0av5MwgSvu3uV5zWt1J+xlwsmFH/8b7KI3oLcSQ9WBe2Idwuj9B3TCH+KQkJG0WEIGHd7WwxwCx5D7uWXqW4YBLPdVGVWQ40lOOY5RFw60+H/DNAKhC64M9CLvgCMAPd34vJvQZdrpcnwLnWv7+eQk142ZsAKoHRGZKvk+O426QdDyV1ztR1s/nIczzXoamtjHbMklfAEeVAAAAAElFTkSuQmCC" width="64">
+</picture></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>​&lt;picture&gt;
+	&lt;source srcset&#x3D;&quot;data:image&#x2F;svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE3LjksMTcuMzlDMTcuNjQsMTYuNTkgMTYuODksMTYgMTYsMTZIMTVWMTNBMSwxIDAgMCwwIDE0LDEySDhWMTBIMTBBMSwxIDAgMCwwIDExLDlWN0gxM0EyLDIgMCAwLDAgMTUsNVY0LjU5QzE3LjkzLDUuNzcgMjAsOC42NCAyMCwxMkMyMCwxNC4wOCAxOS4yLDE1Ljk3IDE3LjksMTcuMzlNMTEsMTkuOTNDNy4wNSwxOS40NCA0LDE2LjA4IDQsMTJDNCwxMS4zOCA0LjA4LDEwLjc4IDQuMjEsMTAuMjFMOSwxNVYxNkEyLDIgMCAwLDAgMTEsMThNMTIsMkExMCwxMCAwIDAsMCAyLDEyQTEwLDEwIDAgMCwwIDEyLDIyQTEwLDEwIDAgMCwwIDIyLDEyQTEwLDEwIDAgMCwwIDEyLDJaIiAvPjwvc3ZnPg&#x3D;&#x3D;&quot; type&#x3D;&quot;image&#x2F;svg+xml&quot;&gt;
+	&lt;img alt&#x3D;&quot;A simple globe icon.&quot; height&#x3D;&quot;64&quot; src&#x3D;&quot;data:image&#x2F;png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAvVBMVEUAAAD&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;+Ke75sAAAAPnRSTlMAAgMFBgkMDQ8qKy5CREhJS09QUlNUVVZXaWpsbW9wd4CJiouMpKbCw9LT1NXW19jZ29zd4uPl7fLz9Pf4+fFU+NUAAADQSURBVHgBnc3ZUsJAEIXhM2RccBdkEcEFzLgTBxcZwPP+j0U16clUbvNdnr+qG43ZoStWq8INLGquvqgWXSStR0av5MwgSvu3uV5zWt1J+xlwsmFH&#x2F;8b7KI3oLcSQ9WBe2Idwuj9B3TCH+KQkJG0WEIGHd7WwxwCx5D7uWXqW4YBLPdVGVWQ40lOOY5RFw60+H&#x2F;DNAKhC64M9CLvgCMAPd34vJvQZdrpcnwLnWv7+eQk142ZsAKoHRGZKvk+O426QdDyV1ztR1s&#x2F;nIczzXoamtjHbMklfAEeVAAAAAElFTkSuQmCC&quot; width&#x3D;&quot;64&quot;&gt;
+&lt;&#x2F;picture&gt;</code></pre>
 					</div>
 				</section>
 				</div>
