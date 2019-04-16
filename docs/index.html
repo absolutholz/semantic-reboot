@@ -130,6 +130,7 @@
 				<li><a href="#dfn">dfn</a></li>
 				<li><a href="#div">div</a></li>
 				<li><a href="#dl">dl</a></li>
+				<li><a href="#fieldset">fieldset</a></li>
 				<li><a href="#em">em</a></li>
 				<li><a href="#figure">figure</a></li>
 				<li><a href="#footer">footer</a></li>
@@ -141,6 +142,7 @@
 				<li><a href="#input">input</a></li>
 				<li><a href="#ins">ins</a></li>
 				<li><a href="#kbd">kbd</a></li>
+				<li><a href="#label">label</a></li>
 				<li><a href="#main">main</a></li>
 				<li><a href="#mark">mark</a></li>
 				<li><a href="#meter">meter</a></li>
@@ -584,6 +586,29 @@ The &lt;dfn&gt;&lt;abbr title&#x3D;&quot;Hubble Space Telescope&quot;&gt;HST&lt;
 				</div>
 			</section>
 			<section class="doc-section">
+				<h3 id="fieldset"><div class="l-contain">fieldset</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;fieldset&gt;</code> element</strong> is used to group several controls as well as labels (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" title="The HTML <label> element represents a caption for an item in a user interface."><code>&lt;label&gt;</code></a>) within a web form. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">&lt;fieldset&gt;: The Field Set element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><fieldset>
+	<legend>Simple fieldset legend</legend>
+	Fieldset content
+</fieldset></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;fieldset&gt;
+	&lt;legend&gt;Simple fieldset legend&lt;&#x2F;legend&gt;
+	Fieldset content
+&lt;&#x2F;fieldset&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
 				<h3 id="em"><div class="l-contain">em</div></h3>
 				<div class="l-contain">
 				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">&lt;em&gt;: The Emphasis element</a></cite></blockquote></div>
@@ -918,6 +943,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 					<div>
 						<h5>Code</h5>
 						<pre class="doc-code"><code>Use the command &lt;kbd&gt;help mycommand&lt;&#x2F;kbd&gt; to view documentation for the command &quot;mycommand&quot;.</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="label"><div class="l-contain">label</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;label&gt;</code> element</strong> represents a caption for an item in a user interface. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">&lt;label&gt;: The Label element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><label>Form label without form element<label></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;label&gt;Form label without form element&lt;label&gt;</code></pre>
 					</div>
 				</section>
 				</div>

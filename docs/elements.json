@@ -115,6 +115,12 @@
 			"example": "<dl>\n\t<dt>Names</dt>\n\t<dt>Nicknames</dt>\n\t<dd>The King of the Monsters</dd>\n\t<dd>Gigantis</dd>\n\t<dd>Godzilla</dd>\n\t<dt>Born</dt>\n\t<dd>1952</dd>\n\t<dt>Birthplace</dt>\n\t<dd>Japan</dd>\n\t<dt>Color</dt>\n\t<dd>Green</dd>\n</dl>"
 		},
 		{
+			"id": "fieldset",
+			"headline": "fieldset",
+			"description": "<blockquote>The <strong>HTML <code>&lt;fieldset&gt;</code> element</strong> is used to group several controls as well as labels (<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label\" title=\"The HTML <label> element represents a caption for an item in a user interface.\"><code>&lt;label&gt;</code></a>) within a web form. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\">&lt;fieldset&gt;: The Field Set element</a></cite></blockquote>",
+			"example": "<fieldset>\n\t<legend>Simple fieldset legend</legend>\n\tFieldset content\n</fieldset>"
+		},
+		{
 			"id": "em",
 			"headline": "em",
 			"description": "<blockquote>The <strong>HTML <code>&lt;em&gt;</code> element</strong> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em\">&lt;em&gt;: The Emphasis element</a></cite></blockquote>",
@@ -179,6 +185,12 @@
 			"headline": "kbd",
 			"description": "<blockquote>The <strong>HTML Keyboard Input element</strong> (<strong><code>&lt;kbd&gt;</code></strong>) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/user_agent\" title=\"user agent: A user agent is a computer program representing a person, for example, a browser in a Web context.\">user agent</a> defaults to rendering the contents of a <code>&lt;kbd&gt;</code> element using its default monospace font, although this is not mandated by the HTML standard. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd\">&lt;kbd&gt;: The Keyboard Input element</a></cite></blockquote>",
 			"example": "Use the command <kbd>help mycommand</kbd> to view documentation for the command \"mycommand\"."
+		},
+		{
+			"id": "label",
+			"headline": "label",
+			"description": "<blockquote>The <strong>HTML <code>&lt;label&gt;</code> element</strong> represents a caption for an item in a user interface. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label\">&lt;label&gt;: The Label element</a></cite></blockquote>",
+			"example": "<label>Form label without form element<label>"
 		},
 		{
 			"id": "main",
