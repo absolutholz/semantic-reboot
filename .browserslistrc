@@ -1,5 +1,6 @@
 # Browsers that we support
 # https://github.com/browserslist/browserslist
+# https://browserl.ist/
 
 last 2 version
 not op_mini all
