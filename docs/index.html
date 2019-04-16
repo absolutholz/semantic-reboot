@@ -2,101 +2,96 @@
 <html class="no-js" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Semantic Elements</title>
-	<meta name="description" content="A collection of semantic HTML elements with examples and minimal documentation">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Semantic Elements</title>
+  <meta name="description" content="A collection of semantic HTML elements with examples and minimal documentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=ng9vWYeEJd">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=ng9vWYeEJd">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=ng9vWYeEJd">
-	<link rel="manifest" href="/site.webmanifest?v=ng9vWYeEJd">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=ng9vWYeEJd" color="#5bbad5">
-	<link rel="shortcut icon" href="/favicon.ico?v=ng9vWYeEJd">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
 
-	<link rel="stylesheet" href="reboot.css">
-	<style>
-		.doc-section {
-			margin-bottom: 5rem;
-		}
+  <link rel="stylesheet" href="reboot.css">
+  <style>
+	.doc-section {
+		margin-bottom: 5rem;
+	}
 
-		.doc-section > h3 {
-			/* Sorry, but I just really like some of the color names */
-			background: darkslategrey;
-			color: white;
-			font: 100 3rem / 1 monospace;
-			padding: 3rem 0 1rem;
-		}
+	.doc-section > h3 {
+		/* Sorry, but I just really like some of the color names */
+		background: darkslategrey;
+		color: white;
+		font: 100 3rem / 1 monospace;
+		padding: 3rem 0 1rem;
+	}
 
-		.doc-description {
-			max-width: 90ch;
-		}
+	.doc-description {
+		max-width: 90ch;
+	}
 
-		.doc-description > blockquote > cite {
-			display: block;
-			padding: 0.125rem 1rem;
-		}
+	.doc-description > blockquote > cite {
+		display: block;
+    	padding: 0.125rem 1rem;
+	}
 
-		.doc-description > blockquote > cite::before {
-			content: "-- ";
-		}
+	.doc-description > blockquote > cite::before {
+		content: "-- ";
+	}
 
-		.doc-example-section {
+	.doc-example-section {
 
-		}
+	}
 
-		.doc-example {
-			border: 1px solid darkslategrey;
-			border-left-width: 5px;
-			padding: 1rem;
-		}
+	.doc-example {
+		border: 1px solid darkslategrey;
+		border-left-width: 5px;
+		padding: 1rem;
+	}
 
-		.doc-code {
-			background: #eee;
-			border: 0 solid darkslategrey;
-			border-left-width: 5px;
-			font-size: 0.875rem;
-			overflow: auto;
-			padding: 1rem;
-			white-space: pre-wrap;
-		}
+	.doc-code {
+		background: #eee;
+		border: 0 solid darkslategrey;
+		border-left-width: 5px;
+		font-size: 0.875rem;
+		overflow: auto;
+		padding: 1rem;
+		white-space: pre-wrap;
+	}
 
-		.doc-table-of-contents {
-			-webkit-column-fill: balance;
-			column-fill: balance;
-			-webkit-column-gap: 2ch;
-			column-gap: 2ch;
-			-webkit-columns: 15ch;
-			columns: 15ch;
-			list-style: none;
-			padding: 0;
-		}
+	.doc-table-of-contents {
+		-webkit-column-fill: balance;
+		column-fill: balance;
+		-webkit-column-gap: 2ch;
+		column-gap: 2ch;
+		-webkit-columns: 15ch;
+		columns: 15ch;
+		list-style: none;
+		padding: 0;
+	}
 
-		.doc-table-of-contents > * {
-			-webkit-column-break-inside: avoid;
-			break-inside: avoid;
-			page-break-inside: avoid;
-		}
+	.doc-table-of-contents > * {
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
 
-		.doc-to-top {
-			background: white;
-			bottom: 10px;
-			display: block;
-			font-size: 2rem;
-			line-height: 1;
-			position: fixed;
-			right: 10px;
-			text-decoration: none;
-		}
+	.doc-to-top {
+		background: white;
+		bottom: 10px;
+		display: block;
+		font-size: 2rem;
+		line-height: 1;
+		position: fixed;
+		right: 10px;
+		text-decoration: none;
+	}
 
-		.l-contain {
-			margin: auto;
-			max-width: 1000px;
-			padding: 0 1rem;
-		}
-	</style>
+	.l-contain {
+		margin: auto;
+		max-width: 1000px;
+		padding: 0 1rem;
+	}
+  </style>
 
   <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
@@ -153,12 +148,14 @@
 				<li><a href="#s">s</a></li>
 				<li><a href="#samp">samp</a></li>
 				<li><a href="#section">section</a></li>
+				<li><a href="#select">select</a></li>
 				<li><a href="#small">small</a></li>
 				<li><a href="#span">span</a></li>
 				<li><a href="#strong">strong</a></li>
 				<li><a href="#sub">sub</a></li>
 				<li><a href="#sup">sup</a></li>
 				<li><a href="#table">table</a></li>
+				<li><a href="#textarea">textarea</a></li>
 				<li><a href="#time">time</a></li>
 				<li><a href="#u">u</a></li>
 				<li><a href="#ul">ul</a></li>
@@ -1029,6 +1026,107 @@ body {
 				</div>
 			</section>
 			<section class="doc-section">
+				<h3 id="select"><div class="l-contain">select</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;select&gt;</code> element</strong> represents a control that provides a menu of options <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">&lt;select&gt;: The Selectbox element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><!-- Single selection -->
+<select>
+	<option value="first">First Value</option>
+	<option value="second" selected>Second Value</option>
+	<option value="third">Third Value</option>
+</select>
+<br><br>
+<!-- State: disabled -->
+<select disabled>
+	<option value="first">First Value</option>
+	<option value="second" selected>Second Value</option>
+	<option value="third">Third Value</option>
+</select>
+<br><br>
+<!-- Multiple selection with optgroups -->
+<select multiple size="6">
+	<optgroup label="4-legged pets">
+		
+		<option value="dog" selected>Dog</option>
+		<option value="cat">Cat</option>
+		<option value="hamster" disabled>Hamster</option>
+	</optgroup>
+	<optgroup label="Flying pets">
+		<option value="parrot">Parrot</option>
+		<option value="macaw">Macaw</option>
+		<option value="albatross">Albatross</option>
+	</optgroup>
+</select>
+<br><br>
+<!-- State: disabled -->
+<select multiple size="6" disabled>
+	<optgroup label="4-legged pets">
+		
+		<option value="dog" selected>Dog</option>
+		<option value="cat">Cat</option>
+		<option value="hamster" disabled>Hamster</option>
+	</optgroup>
+	<optgroup label="Flying pets">
+		<option value="parrot">Parrot</option>
+		<option value="macaw">Macaw</option>
+		<option value="albatross">Albatross</option>
+	</optgroup>
+</select></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;!-- Single selection --&gt;
+&lt;select&gt;
+	&lt;option value&#x3D;&quot;first&quot;&gt;First Value&lt;&#x2F;option&gt;
+	&lt;option value&#x3D;&quot;second&quot; selected&gt;Second Value&lt;&#x2F;option&gt;
+	&lt;option value&#x3D;&quot;third&quot;&gt;Third Value&lt;&#x2F;option&gt;
+&lt;&#x2F;select&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- State: disabled --&gt;
+&lt;select disabled&gt;
+	&lt;option value&#x3D;&quot;first&quot;&gt;First Value&lt;&#x2F;option&gt;
+	&lt;option value&#x3D;&quot;second&quot; selected&gt;Second Value&lt;&#x2F;option&gt;
+	&lt;option value&#x3D;&quot;third&quot;&gt;Third Value&lt;&#x2F;option&gt;
+&lt;&#x2F;select&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- Multiple selection with optgroups --&gt;
+&lt;select multiple size&#x3D;&quot;6&quot;&gt;
+	&lt;optgroup label&#x3D;&quot;4-legged pets&quot;&gt;
+		
+		&lt;option value&#x3D;&quot;dog&quot; selected&gt;Dog&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;cat&quot;&gt;Cat&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;hamster&quot; disabled&gt;Hamster&lt;&#x2F;option&gt;
+	&lt;&#x2F;optgroup&gt;
+	&lt;optgroup label&#x3D;&quot;Flying pets&quot;&gt;
+		&lt;option value&#x3D;&quot;parrot&quot;&gt;Parrot&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;macaw&quot;&gt;Macaw&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;albatross&quot;&gt;Albatross&lt;&#x2F;option&gt;
+	&lt;&#x2F;optgroup&gt;
+&lt;&#x2F;select&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- State: disabled --&gt;
+&lt;select multiple size&#x3D;&quot;6&quot; disabled&gt;
+	&lt;optgroup label&#x3D;&quot;4-legged pets&quot;&gt;
+		
+		&lt;option value&#x3D;&quot;dog&quot; selected&gt;Dog&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;cat&quot;&gt;Cat&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;hamster&quot; disabled&gt;Hamster&lt;&#x2F;option&gt;
+	&lt;&#x2F;optgroup&gt;
+	&lt;optgroup label&#x3D;&quot;Flying pets&quot;&gt;
+		&lt;option value&#x3D;&quot;parrot&quot;&gt;Parrot&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;macaw&quot;&gt;Macaw&lt;&#x2F;option&gt;
+		&lt;option value&#x3D;&quot;albatross&quot;&gt;Albatross&lt;&#x2F;option&gt;
+	&lt;&#x2F;optgroup&gt;
+&lt;&#x2F;select&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
 				<h3 id="small"><div class="l-contain">small</div></h3>
 				<div class="l-contain">
 				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;small&gt;</code></strong> <strong>element </strong>makes the text <em>font size</em> one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.&nbsp; In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small">&lt;small&gt;: The Small element</a></cite></blockquote></div>
@@ -1166,6 +1264,45 @@ body {
 		&lt;&#x2F;tr&gt;
 	&lt;&#x2F;tbody&gt;
 &lt;&#x2F;table&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="textarea"><div class="l-contain">textarea</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML <code>&lt;textarea&gt;</code> element</strong> represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">&lt;textarea&gt;: The Textarea element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><!-- With normal text-->
+<textarea rows="5" cols="30">Write something here</textarea>
+<br><br>
+<!-- With placeholder text-->
+<textarea rows="5" cols="30" placeholder="Write something here"></textarea>
+<br><br>
+<!-- State: disabled-->
+<textarea rows="5" cols="30" disabled>Write something here</textarea>
+<br><br>
+<!-- State: readonly-->
+<textarea rows="5" cols="30" readonly>Write something here</textarea>
+</div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;!-- With normal text--&gt;
+&lt;textarea rows&#x3D;&quot;5&quot; cols&#x3D;&quot;30&quot;&gt;Write something here&lt;&#x2F;textarea&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- With placeholder text--&gt;
+&lt;textarea rows&#x3D;&quot;5&quot; cols&#x3D;&quot;30&quot; placeholder&#x3D;&quot;Write something here&quot;&gt;&lt;&#x2F;textarea&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- State: disabled--&gt;
+&lt;textarea rows&#x3D;&quot;5&quot; cols&#x3D;&quot;30&quot; disabled&gt;Write something here&lt;&#x2F;textarea&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- State: readonly--&gt;
+&lt;textarea rows&#x3D;&quot;5&quot; cols&#x3D;&quot;30&quot; readonly&gt;Write something here&lt;&#x2F;textarea&gt;
+</code></pre>
 					</div>
 				</section>
 				</div>

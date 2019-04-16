@@ -242,6 +242,12 @@
 			"example": "<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>"
 		},
 		{
+			"id": "select",
+			"headline": "select",
+			"description": "<blockquote>The <strong>HTML <code>&lt;select&gt;</code> element</strong> represents a control that provides a menu of options <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\">&lt;select&gt;: The Selectbox element</a></cite></blockquote>",
+			"example": "<!-- Single selection -->\n<select>\n\t<option value=\"first\">First Value</option>\n\t<option value=\"second\" selected>Second Value</option>\n\t<option value=\"third\">Third Value</option>\n</select>\n<br><br>\n<!-- State: disabled -->\n<select disabled>\n\t<option value=\"first\">First Value</option>\n\t<option value=\"second\" selected>Second Value</option>\n\t<option value=\"third\">Third Value</option>\n</select>\n<br><br>\n<!-- Multiple selection with optgroups -->\n<select multiple size=\"6\">\n\t<optgroup label=\"4-legged pets\">\n\t\t\n\t\t<option value=\"dog\" selected>Dog</option>\n\t\t<option value=\"cat\">Cat</option>\n\t\t<option value=\"hamster\" disabled>Hamster</option>\n\t</optgroup>\n\t<optgroup label=\"Flying pets\">\n\t\t<option value=\"parrot\">Parrot</option>\n\t\t<option value=\"macaw\">Macaw</option>\n\t\t<option value=\"albatross\">Albatross</option>\n\t</optgroup>\n</select>\n<br><br>\n<!-- State: disabled -->\n<select multiple size=\"6\" disabled>\n\t<optgroup label=\"4-legged pets\">\n\t\t\n\t\t<option value=\"dog\" selected>Dog</option>\n\t\t<option value=\"cat\">Cat</option>\n\t\t<option value=\"hamster\" disabled>Hamster</option>\n\t</optgroup>\n\t<optgroup label=\"Flying pets\">\n\t\t<option value=\"parrot\">Parrot</option>\n\t\t<option value=\"macaw\">Macaw</option>\n\t\t<option value=\"albatross\">Albatross</option>\n\t</optgroup>\n</select>"
+		},
+		{
 			"id": "small",
 			"headline": "small",
 			"description": "<blockquote>The <strong>HTML <code>&lt;small&gt;</code></strong> <strong>element </strong>makes the text <em>font size</em> one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.&nbsp; In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small\">&lt;small&gt;: The Small element</a></cite></blockquote>",
@@ -276,6 +282,12 @@
 			"headline": "table",
 			"description": "<blockquote>The <strong>HTML <code>&lt;table&gt;</code> element</strong> represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table\">&lt;table&gt;: The Table element</a></cite></blockquote>",
 			"example": "<table>\n\t<caption>Table caption</caption>\n\t<colgroup>\n\t\t<col style=\"background-color: #0f0\">\n\t\t<col span=\"2\">\n\t</colgroup>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Lime</th>\n\t\t\t<th>Lemon</th>\n\t\t\t<th>Orange</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Green</td>\n\t\t\t<td>Yellow</td>\n\t\t\t<td>Orange</td>\n\t\t</tr>\n\t</tbody>\n</table>"
+		},
+		{
+			"id": "textarea",
+			"headline": "textarea",
+			"description": "<blockquote>The <strong>HTML <code>&lt;textarea&gt;</code> element</strong> represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea\">&lt;textarea&gt;: The Textarea element</a></cite></blockquote>",
+			"example": "<!-- With normal text-->\n<textarea rows=\"5\" cols=\"30\">Write something here</textarea>\n<br><br>\n<!-- With placeholder text-->\n<textarea rows=\"5\" cols=\"30\" placeholder=\"Write something here\"></textarea>\n<br><br>\n<!-- State: disabled-->\n<textarea rows=\"5\" cols=\"30\" disabled>Write something here</textarea>\n<br><br>\n<!-- State: readonly-->\n<textarea rows=\"5\" cols=\"30\" readonly>Write something here</textarea>\n"
 		},
 		{
 			"id": "time",
