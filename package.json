@@ -9,7 +9,9 @@
     "minify": "cleancss --level=1 --output dist/reboot.min.css dist/reboot.css",
     "build": "npm run compile && npm run prefix",
     "distribute": "npm run clean && npm run build && npm run minify",
-    "document": "mustache docs/elements.json docs/index.mustache > docs/index.html && npm run distribute && cp -a -v dist/. docs/"
+    "document": "mustache docs/elements.json docs/index.mustache > docs/index.html && npm run distribute && cp -a -v dist/. docs/",
+    "test-pa11y": "pa11y ./docs/index.html",
+    "test-axe": "axe ./docs/index.html"
   },
   "repository": {
     "type": "git",
@@ -29,9 +31,11 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.5.0",
+    "axe-cli": "^3.0.0",
     "clean-css-cli": "^4.2.1",
     "mustache": "^3.0.1",
     "node-sass": "^4.11.0",
+    "pa11y": "^5.1.0",
     "postcss-cli": "^6.1.2"
   },
   "main": "/dist/reboot.min.css"
