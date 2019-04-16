@@ -187,6 +187,12 @@
 			"example": "It is a dark time for the Rebellion. Although the Death Star has been destroyed, <mark>Imperial</mark> troops have driven the Rebel forces from their hidden base and pursued them across the galaxy."
 		},
 		{
+			"id": "meter",
+			"headline": "meter",
+			"description": "<blockquote>The <strong>HTML <code>&lt;meter&gt;</code> element</strong> represents either a scalar value within a known range or a fractional value. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter\">&lt;meter&gt;: The Scalal Value Representation element</a></cite></blockquote>",
+			"example": "<p>Heat the oven to <meter min=\"200\" max=\"500\" value=\"350\">350 degrees</meter>.</p>"
+		},
+		{
 			"id": "nav",
 			"headline": "nav",
 			"description": "<blockquote>The <strong>HTML <code>&lt;nav&gt;</code> element</strong> represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav\">&lt;nav&gt;: The Navigation Section element</a></cite></blockquote>",
@@ -215,6 +221,12 @@
 			"headline": "pre",
 			"description": "<blockquote>The <strong>HTML <code>&lt;pre&gt;</code> element</strong> represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional (\"monospace\") font. Whitespace inside this element is displayed as written. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre\">&lt;pre&gt;: The Paragraph element</a></cite></blockquote>",
 			"example": "<pre>\nbody {\n\tcolor:red;\n}\n</pre>"
+		},
+		{
+			"id": "progress",
+			"headline": "progress",
+			"description": "<blockquote>The <strong>HTML <code>&lt;progress&gt;</code> element</strong> displays an indicator showing the completion progress of a task, typically displayed as a progress bar. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress\">&lt;progress&gt;: The Progress Indicator element</a></cite></blockquote>",
+			"example": "<p>You have completed <progress value=\"70\" max=\"100\">70 %</progress> of the process.</p>"
 		},
 		{
 			"id": "q",
