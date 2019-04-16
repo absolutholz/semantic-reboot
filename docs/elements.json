@@ -205,6 +205,12 @@
 			"example": "<ol>\n\t<li>first item</li>\n\t<li>second item\n\t\t<ol>\n\t\t\t<li>second item first subitem</li>\n\t\t\t<li>second item second subitem\n\t\t\t\t<ol>\n\t\t\t\t\t<li>second item second subitem first sub-subitem</li>\n\t\t\t\t\t<li>second item second subitem second sub-subitem</li>\n\t\t\t\t</ol>\n\t\t\t</li>\n\t\t\t<li>second item third subitem</li>\n\t\t</ol>\n\t</li>\n\t<li>third item</li>\n</ol>"
 		},
 		{
+			"id": "output",
+			"headline": "output",
+			"description": "<blockquote>The <strong>HTML Output element</strong> (<strong><code>&lt;output&gt;</code></strong>) is a container element into which a site or app can inject the results of a calculation or the outcome of a user action. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output\">&lt;output&gt;: The Output element</a></cite></blockquote>",
+			"example": "<form oninput=\"result.value=parseInt(a.value)+parseInt(b.value)\">\n\t<input type=\"number\" name=\"b\" value=\"50\" /> + \n\t<input type=\"number\" name=\"a\" value=\"10\" /> = \n\t<output name=\"result\">60</output>\n</form>"
+		},
+		{
 			"id": "p",
 			"headline": "p",
 			"description": "<blockquote>The <strong>HTML <code>&lt;p&gt;</code> element</strong> represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. <cite>MDN web docs: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p\">&lt;p&gt;: The Paragraph element</a></cite></blockquote>",

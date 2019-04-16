@@ -142,6 +142,7 @@
 				<li><a href="#meter">meter</a></li>
 				<li><a href="#nav">nav</a></li>
 				<li><a href="#ol">ol</a></li>
+				<li><a href="#output">output</a></li>
 				<li><a href="#p">p</a></li>
 				<li><a href="#picture">picture</a></li>
 				<li><a href="#pre">pre</a></li>
@@ -905,6 +906,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 	&lt;&#x2F;li&gt;
 	&lt;li&gt;third item&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;</code></pre>
+					</div>
+				</section>
+				</div>
+			</section>
+			<section class="doc-section">
+				<h3 id="output"><div class="l-contain">output</div></h3>
+				<div class="l-contain">
+				<div class="doc-description"><blockquote>The <strong>HTML Output element</strong> (<strong><code>&lt;output&gt;</code></strong>) is a container element into which a site or app can inject the results of a calculation or the outcome of a user action. <cite>MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output">&lt;output&gt;: The Output element</a></cite></blockquote></div>
+				<h4>Example</h4>
+				<section class="doc-example-section">
+					<div>
+						<h5>Output</h5>
+						<div class="doc-example"><form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+	<input type="number" name="b" value="50" /> + 
+	<input type="number" name="a" value="10" /> = 
+	<output name="result">60</output>
+</form></div>
+					</div>
+					<div>
+						<h5>Code</h5>
+						<pre class="doc-code"><code>&lt;form oninput&#x3D;&quot;result.value&#x3D;parseInt(a.value)+parseInt(b.value)&quot;&gt;
+	&lt;input type&#x3D;&quot;number&quot; name&#x3D;&quot;b&quot; value&#x3D;&quot;50&quot; &#x2F;&gt; + 
+	&lt;input type&#x3D;&quot;number&quot; name&#x3D;&quot;a&quot; value&#x3D;&quot;10&quot; &#x2F;&gt; &#x3D; 
+	&lt;output name&#x3D;&quot;result&quot;&gt;60&lt;&#x2F;output&gt;
+&lt;&#x2F;form&gt;</code></pre>
 					</div>
 				</section>
 				</div>
