@@ -10,8 +10,9 @@
     "build": "npm run compile && npm run prefix",
     "distribute": "npm run clean && npm run build && npm run minify",
     "document": "mustache docs/elements.json docs/index.mustache > docs/index.html && npm run distribute && cp -a -v dist/. docs/",
-    "test-pa11y": "pa11y ./docs/index.html",
-    "test-axe": "axe ./docs/index.html"
+    "test:pa11y": "pa11y ./docs/index.html",
+    "test:axe": "axe ./docs/index.html",
+    "test": "npm run test:pa11y && npm run test:axe"
   },
   "repository": {
     "type": "git",
