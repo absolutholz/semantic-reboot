@@ -1,6 +1,6 @@
 {
   "name": "semantic-reboot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A combination of reset/normalize/reboot styles taken from multiple sources and frameworks.",
   "scripts": {
     "clean": "rimraf dist",
